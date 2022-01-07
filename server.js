@@ -7,7 +7,13 @@ app.get("/", function (req, res) {
 })
 
 app.get("/data", function (req, res) {
-    res.send({ imie: "Przemysław", nazwisko: "Maciejczyk", klasa: "3i1", grupa: "2" })
+    let obiekt = {
+        imie: "Przemysław",
+        nazwisko: "Maciejczyk",
+        klasa: "3i1",
+        grupa: "2"
+    }
+    res.send(obiekt)
 })
 
 app.listen(PORT, function () {
